@@ -7,7 +7,9 @@
       {{input type='text' value=raceNotes placeholder='Race Notes' class='new-run__form--input'}}
 
       <div class="new-run__buttons">
-        <button type="button" class='new-run__buttons--btn cancel' {{action 'cancel' on='click'}}>Cancel</button>
+        {{#link-to 'index'}}
+          <button type="button" class='new-run__buttons--btn cancel'>Cancel</button>
+        {{/link-to}}
         <button class="new-run__buttons--btn save">Save</button>
       </div>
     </form>
