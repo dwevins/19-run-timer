@@ -1,0 +1,12 @@
+.main-view {
+  background-color: $master-bg;
+  flex-grow: 1;
+}
+
+.view-footer {
+  background-color: $master-bg;
+
+  &__content {
+    width: 100%;
+  }
+}

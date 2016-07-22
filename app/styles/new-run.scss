@@ -1,0 +1,24 @@
+.new-run {
+  display: flex;
+  flex-direction: column;
+
+  &__form {
+  display: flex;
+  flex-direction: column;
+
+    &--input {
+
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+
+    &--btn {
+      width: 100%;
+      max-width: 5rem;
+      min-width: 3rem;
+    }
+  }
+}
