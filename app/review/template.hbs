@@ -2,12 +2,9 @@
   <div class="container">
     <h1 class="view-title">My Run</h1>
 
-    {{log model}}
-    {{#each model as |run|}}
-      <p>{{run.raceDate}}</p>
-      <p>{{run.runTime}}</p>
-      <p>{{run.raceNotes}}</p>
-    {{/each}}
+      <p>{{model.raceDate}}</p>
+      <p>{{model.runTime}}</p>
+      <p>{{model.raceNotes}}</p>
   </div>
 </div>
 {{outlet}}
