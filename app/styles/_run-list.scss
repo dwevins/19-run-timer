@@ -11,3 +11,12 @@
     border-bottom: 1px solid $placeholder-text;
   }
 }
+
+.run-footer {
+  background-color: $master-bg;
+
+  &__content {
+    width: 100%;
+    text-align: right;
+  }
+}
