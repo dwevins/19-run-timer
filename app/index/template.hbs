@@ -1,18 +1,12 @@
 <div class="main-view">
   <div class="container">
     <ul class="run-list">
-      <li class="run-list__item">
-        <p class="date run-list__item--date">Dec 1, 2015</p>
-        <p class="time run-list__item--time">00:23:15</p>
-      </li>
-      <li class="run-list__item">
-        <p class="date run-list__item--date">Dec 1, 2015</p>
-        <p class="time run-list__item--time">00:23:15</p>
-      </li>
-      <li class="run-list__item">
-        <p class="date run-list__item--date">Dec 1, 2015</p>
-        <p class="time run-list__item--time">00:23:15</p>
-      </li>
+      {{#each model as |run|}}
+        <li class="run-list__item">
+          <p class="date run-list__item--date">{{run.raceDate}}</p>
+          <p class="time run-list__item--time">{{run.runTime}}</p>
+        </li>
+      {{/each}}
     </ul>
   </div>
 </div>
