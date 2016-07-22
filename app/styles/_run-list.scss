@@ -1,0 +1,13 @@
+.run-page {
+  background-color: $master-bg;
+  flex-grow: 1;
+}
+
+.run-list {
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $placeholder-text;
+  }
+}
