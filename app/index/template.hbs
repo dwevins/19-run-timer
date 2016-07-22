@@ -2,7 +2,7 @@
   <div class="container">
     <ul class="run-list">
       {{#each model as |run|}}
-        <li class="run-list__item">
+        <li class="run-list__item" {{action 'goToReview' run on='click'}}>
           <p class="date run-list__item--date">{{run.raceDate}}</p>
           <p class="time run-list__item--time">{{run.runTime}}</p>
         </li>
