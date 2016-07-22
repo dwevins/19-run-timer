@@ -1,0 +1,13 @@
+.header {
+  background-color: $header-bar-blue;
+  padding: $gutter 0;
+
+  &__title {
+    margin: 0;
+  }
+}
+
+.home-link {
+  text-decoration: none;
+  color: $title-white;
+}
