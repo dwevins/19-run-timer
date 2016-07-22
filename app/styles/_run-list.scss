@@ -9,6 +9,10 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $placeholder-text;
+
+    &--time {
+      color: $green-text;
+    }
   }
 }
 
@@ -19,4 +23,9 @@
     width: 100%;
     text-align: right;
   }
+}
+
+.new-run-link {
+  text-decoration: none;
+  color: $button-green;
 }

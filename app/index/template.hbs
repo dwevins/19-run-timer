@@ -18,7 +18,11 @@
 </div>
 <footer class="run-footer">
   <div class="container">
-    <p class="run-footer__content">add new run</p>
+    <p class="run-footer__content">
+      {{#link-to 'new-run' class='new-run-link'}}
+        add new run
+      {{/link-to}}
+    </p>
   </div>
 </footer>
 {{outlet}}
