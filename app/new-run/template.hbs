@@ -3,7 +3,7 @@
   <h1>New Run</h1>
     <form class="new-run__form" {{action 'addRun' on='submit'}}>
       {{input type='text' value=runTime placeholder='Run Time' class='new-run__form--input'}}
-      {{input type='text' value=raceDate placeholder='Race Date' class='new-run__form--input'}}
+      {{input type='date' value=raceDate placeholder='Race Date' class='new-run__form--input'}}
       {{input type='text' value=raceNotes placeholder='Race Notes' class='new-run__form--input'}}
 
       <div class="new-run__buttons">

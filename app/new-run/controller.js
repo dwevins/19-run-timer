@@ -16,8 +16,14 @@ export default Ember.Controller.extend({
         },
         method: 'post',
         body: JSON.stringify(data),
-      });
-      this.transitionToRoute('/')
+      })
+        .then((res) => res.json())
+        .then((newRun) => {
+          this.transitionToRoute('/', newRun);
+          this.set('runTime', '');
+          this.set('raceDate', '');
+          this.set('raceNotes', '');
+        });
     },
   }
 });
