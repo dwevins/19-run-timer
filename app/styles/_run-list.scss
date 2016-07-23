@@ -10,23 +10,27 @@
     }
   }
 }
-
+.text {
+  margin-bottom: 0;
+  line-height: 1.25 * $base-line-height;
+}
 .view-footer {
 
   &__content {
     width: 100%;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
 
 .new-run-icon {
 
   &__circle {
-    color: $button-green;
+    color: $title-white;
   }
 
   &__plus {
-    text-decoration: none;
-    color: $title-white;
+    color: $button-green;
   }
 }

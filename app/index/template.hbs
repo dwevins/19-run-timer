@@ -3,8 +3,8 @@
     <ul class="run-list">
       {{#each model as |run|}}
         <li class="run-list__item" {{action 'goToReview' run on='click'}}>
-          <p class="date run-list__item--date">{{run.raceDate}}</p>
-          <p class="time run-list__item--time">{{run.runTime}}</p>
+          <p class="date run-list__item--date text">{{run.raceDate}}</p>
+          <p class="time run-list__item--time text">{{run.runTime}}</p>
         </li>
       {{/each}}
     </ul>
@@ -13,12 +13,14 @@
 <footer class="view-footer">
   <div class="container">
     <p class="view-footer__content">
+    <span class="new-run-icon">
       {{#link-to 'new-run' class='new-run-link'}}
-        {{#fa-stack size=3 as |s|}}
+        {{#fa-stack size=2 as |s|}}
           {{s.stack-2x 'circle' class='new-run-icon__circle'}}
-          {{s.stack-1x 'plus' class='rew-run-icon__plus'}}
+          {{s.stack-2x 'plus-circle' class='new-run-icon__plus'}}
         {{/fa-stack}}
       {{/link-to}}
+    </span>
     </p>
   </div>
 </footer>
