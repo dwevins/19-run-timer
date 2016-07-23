@@ -1,7 +1,7 @@
 <div class="main-view">
   <div class="container">
-  <h1>New Run</h1>
     <form class="form" {{action 'addRun' on='submit'}}>
+      <h1 class='form__title'>New Run</h1>
       {{input type='text' value=runTime placeholder='Run Time' class='form__input'}}
       {{input type='text' value=raceDate placeholder='Race Date' class='form__input'}}
       {{input type='text' value=raceNotes placeholder='Race Notes' class='form__input'}}

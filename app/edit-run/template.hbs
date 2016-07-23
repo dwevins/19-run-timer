@@ -1,7 +1,7 @@
 <div class="main-view">
   <div class="container">
-  <h1>Edit Run</h1>
     <form class="form" {{action 'editRun' model._id on='submit'}}>
+      <h1 class='form__title'>Edit Run</h1>
       {{input type='text' value=model.runTime class='form__input'}}
       {{input type='text' value=model.raceDate class='form__input'}}
       {{input type='text' value=model.raceNotes class='form__input'}}
