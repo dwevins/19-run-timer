@@ -1,16 +1,16 @@
 <div class="main-view">
   <div class="container">
   <h1>New Run</h1>
-    <form class="new-run__form" {{action 'addRun' on='submit'}}>
-      {{input type='text' value=runTime placeholder='Run Time' class='new-run__form--input'}}
-      {{input type='text' value=raceDate placeholder='Race Date' class='new-run__form--input'}}
-      {{input type='text' value=raceNotes placeholder='Race Notes' class='new-run__form--input'}}
+    <form class="form" {{action 'addRun' on='submit'}}>
+      {{input type='text' value=runTime placeholder='Run Time' class='form__input'}}
+      {{input type='text' value=raceDate placeholder='Race Date' class='form__input'}}
+      {{input type='text' value=raceNotes placeholder='Race Notes' class='form__input'}}
 
-      <div class="new-run__buttons">
+      <div class="form__buttons">
         {{#link-to 'index'}}
-          <button type="button" class='new-run__buttons--btn cancel'>Cancel</button>
+          <button type="button" class='form__buttons--btn cancel'>Cancel</button>
         {{/link-to}}
-        <button class="new-run__buttons--btn save">Save</button>
+        <button class="form__buttons--btn save">Save</button>
       </div>
     </form>
   </div>

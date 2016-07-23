@@ -10,3 +10,26 @@
     width: 100%;
   }
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    background-color: inherit;
+    border: 0;
+    border-bottom: 1px solid $placeholder-text;
+    font-size: 1.2rem;
+    line-height: $base-line-height;
+    margin-bottom: 2 * $gutter;
+    color: $placeholder-text;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__buttons {
+
+  }
+}
