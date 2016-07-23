@@ -14,7 +14,10 @@
   <div class="container">
     <p class="view-footer__content">
       {{#link-to 'new-run' class='new-run-link'}}
-        add new run
+        {{#fa-stack size=4 as |s|}}
+          {{s.stack-2x 'circle' class='new-run-icon__circle'}}
+          {{s.stack-1x 'plus' class='rew-run-icon-plus'}}
+        {{/fa-stack}}
       {{/link-to}}
     </p>
   </div>

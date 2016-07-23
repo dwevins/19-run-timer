@@ -18,13 +18,13 @@ export default Ember.Controller.extend({
         body: JSON.stringify(data),
       })
         .then((res) => res.json())
-        .then((run) => {
+        .then(() => {
           this.transitionToRoute('review', id);
         });
     },
 
     cancel(id){
-      this.transitionToRoute('review', id)
+      this.transitionToRoute('review', id);
     },
 
   }
