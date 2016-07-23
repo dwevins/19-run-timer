@@ -1,10 +1,19 @@
 <div class="main-view">
   <div class="container">
     <h1 class="view-title">My Run</h1>
-
       <p>{{model.raceDate}}</p>
       <p>{{model.runTime}}</p>
       <p>{{model.raceNotes}}</p>
   </div>
 </div>
+<footer class="view-footer">
+  <div class="containter">
+    <div class="view-container__content">
+      {{#link-to 'index' class='return-to-index-link'}}
+        <p>back</p>
+      {{/link-to}}
+      <p {{action 'goToEdit' model on='click'}}>edit</p>
+    </div>
+  </div>
+</footer>
 {{outlet}}
