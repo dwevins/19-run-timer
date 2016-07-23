@@ -19,10 +19,10 @@
     background-color: inherit;
     border: 0;
     border-bottom: 1px solid $placeholder-text;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: $base-line-height;
     margin-bottom: 2 * $gutter;
-    color: $placeholder-text;
+    color: $regular-text;
 
     &:focus {
       outline: none;
@@ -30,6 +30,38 @@
   }
 
   &__buttons {
+    display: flex;
+    justify-content: space-between;
 
+    &--btn {
+      width: 5rem;
+      padding: 0.6 * $gutter 0;
+      border: 0;
+      color: $button-text-grey;
+    }
   }
+}
+
+.cancel {
+  background-color: $button-grey;
+}
+
+.save {
+  background-color: $button-green;
+}
+
+input::-webkit-input-placeholder {
+   color: $placeholder-text;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+   color: $placeholder-text;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+   color: $placeholder-text;
+}
+
+input:-ms-input-placeholder {
+   color: $placeholder-text;
 }
