@@ -19,7 +19,14 @@
   }
 }
 
-.new-run-link {
-  text-decoration: none;
-  color: $button-green;
+.new-run-icon {
+
+  &__circle {
+    color: $button-green;
+  }
+
+  &__plus {
+    text-decoration: none;
+    color: $title-white;
+  }
 }
