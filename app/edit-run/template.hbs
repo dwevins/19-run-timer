@@ -1,1 +1,18 @@
+<div class="main-view">
+  <div class="container">
+  <h1>Edit Run</h1>
+    <form class="edit-run__form" {{action 'editRun' model._id on='submit'}}>
+      {{input type='text' value=model.runTime class='edit-run__form--input'}}
+      {{input type='text' value=model.raceDate class='edit-run__form--input'}}
+      {{input type='text' value=model.raceNotes class='edit-run__form--input'}}
+
+      <div class="edit-run__buttons">
+          <button type="button" class='edit-run__buttons--btn cancel' {{action 'cancel' model._id on='click'}}>
+            Cancel
+          </button>
+        <button class="edit-run__buttons--btn save">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
 {{outlet}}
