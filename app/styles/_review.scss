@@ -1,0 +1,47 @@
+.run-details {
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.review-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.return-to-index-link {
+  text-decoration: none;
+}
+
+.back-icon {
+
+  &__circle {
+    color: $button-text-grey;
+  }
+
+  &__chevron {
+    color: $button-grey
+  }
+}
+
+.edit-run-icon {
+
+  &__circle {
+    color: $button-green;
+  }
+
+  &__pencil {
+    color: $title-white;
+  }
+}
+
+.time {
+  color: $green-text;
+}
+
+.notes {
+  margin-top: 2 * $gutter;
+}
