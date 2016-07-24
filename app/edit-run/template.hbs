@@ -2,7 +2,7 @@
   <div class="container">
     <form class="form" {{action 'editRun' model._id on='submit'}}>
       <h1 class='form__title'>Edit Run</h1>
-      {{input type='text' value=model.runTime class='form__input'}}
+      {{masked-input mask='11:11:11' pattern='[0-9]{2}:[0-9]{2}:[0-9]{2}' value=model.runTime class='form__input' placeholder='HH:MM:SS'}}
       {{input type='date' value=model.raceDate class='form__input'}}
       {{input type='text' value=model.raceNotes class='form__input'}}
 
