@@ -3,7 +3,7 @@
     <ul class="run-list">
       {{#each model as |run|}}
         <li class="run-list__item" {{action 'goToReview' run on='click'}}>
-          <p class="date run-list__item--date text">{{run.raceDate}}</p>
+          <p class="date run-list__item--date text">{{formatDate run.raceDate}}</p>
           <p class="time run-list__item--time text">{{run.runTime}}</p>
         </li>
       {{/each}}
