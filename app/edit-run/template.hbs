@@ -3,7 +3,7 @@
     <form class="form" {{action 'editRun' model._id on='submit'}}>
       <h1 class='form__title'>Edit Run</h1>
       {{input type='text' value=model.runTime class='form__input'}}
-      {{input type='text' value=model.raceDate class='form__input'}}
+      {{input type='date' value=model.raceDate class='form__input'}}
       {{input type='text' value=model.raceNotes class='form__input'}}
 
       <div class="form__buttons">

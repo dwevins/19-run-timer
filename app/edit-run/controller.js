@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
     editRun(id) {
       const data = {
         runTime: this.model.runTime,
-        raceDate: this.model.raceDate,
+        raceDate: moment(this.model.raceDate).format('MMM D, YYYY'),
         raceNotes: this.model.raceNotes,
       };
 
