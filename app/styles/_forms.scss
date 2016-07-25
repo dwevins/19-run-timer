@@ -51,16 +51,20 @@
 
 input::-webkit-input-placeholder {
    color: $placeholder-text;
+   font-size: 1rem;
 }
 
 input:-moz-placeholder { /* Firefox 18- */
    color: $placeholder-text;
+   font-size: 1rem;
 }
 
 input::-moz-placeholder {  /* Firefox 19+ */
    color: $placeholder-text;
+   font-size: 1rem;
 }
 
 input:-ms-input-placeholder {
    color: $placeholder-text;
+   font-size: 1rem;
 }
