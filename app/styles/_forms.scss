@@ -49,9 +49,13 @@
 
 //code below found at https://css-tricks.com/snippets/css/style-placeholder-text/
 
-input::-webkit-input-placeholder {
+input::-webkit-datetime-placeholder {
    color: $placeholder-text;
    font-size: 1rem;
+}
+
+input::-webkit-datetime-edit {
+  font-size: 1rem;
 }
 
 input:-moz-placeholder { /* Firefox 18- */
