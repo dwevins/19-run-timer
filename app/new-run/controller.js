@@ -2,6 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   actions: {
+    cancel() {
+      debugger;
+      this.transitionToRoute('/');
+      this.set('runTime', '');
+      this.set('raceDate', '');
+      this.set('raceNotes', '');
+    },
+
     addRun() {
       const data = {
         runTime: this.runTime,
