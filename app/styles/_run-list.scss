@@ -1,0 +1,36 @@
+.run-list {
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $placeholder-text;
+
+    &--time {
+      color: $green-text;
+    }
+  }
+}
+.text {
+  margin-bottom: 0;
+  line-height: 1.25 * $base-line-height;
+}
+.view-footer {
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.new-run-icon {
+
+  &__circle {
+    color: $title-white;
+  }
+
+  &__plus {
+    color: $button-green;
+  }
+}

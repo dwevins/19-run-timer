@@ -1,0 +1,35 @@
+<div class="main-view">
+  <div class="container">
+    <h1 class="view-title">My Run</h1>
+      <div class="run-details">
+        <div class="run-details__box">
+          <p class="run-details__box--item date">{{formatDate model.raceDate}}</p>
+          <p class="run-details__box--item time">{{model.runTime}}</p>
+        </div>
+        <div class="run-details__box">
+          <p class="run-details__box--item notes">{{model.raceNotes}}</p>
+        </div>
+      </div>
+  </div>
+</div>
+<footer class="view-footer">
+  <div class="container">
+    <div class="view-footer__content review-buttons">
+      {{#link-to 'index' class='return-to-index-link'}}
+        <span>
+          {{#fa-stack size=2 as |s|}}
+            {{s.stack-2x 'circle' class='back-icon__circle'}}
+            {{s.stack-2x 'chevron-circle-left' class='back-icon__chevron'}}
+          {{/fa-stack}}
+        </span>
+      {{/link-to}}
+      <span {{action 'goToEdit' model on='click'}}>
+        {{#fa-stack size=2 as |s|}}
+          {{s.stack-2x 'circle' class='edit-run-icon__circle'}}
+          {{s.stack-1x 'pencil' class='edit-run-icon__pencil'}}
+        {{/fa-stack}}
+      </span>
+    </div>
+  </div>
+</footer>
+{{outlet}}
