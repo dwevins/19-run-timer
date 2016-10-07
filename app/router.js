@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('review', { path: 'review/id/:id' });
   this.route('new-run');
   this.route('edit-run', { path: 'review/id/:id/edit'});
+  this.route('loading');
 });
 
 export default Router;

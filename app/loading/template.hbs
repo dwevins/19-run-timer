@@ -1,0 +1,20 @@
+<div class="main-view">
+  <div class="container">
+
+  </div>
+</div>
+<footer class="view-footer">
+  <div class="container">
+    <p class="view-footer__content">
+    <span class="new-run-icon">
+      {{#link-to 'new-run' class='new-run-link'}}
+        {{#fa-stack size=2 as |s|}}
+          {{s.stack-2x 'circle' class='new-run-icon__circle'}}
+          {{s.stack-2x 'plus-circle' class='new-run-icon__plus'}}
+        {{/fa-stack}}
+      {{/link-to}}
+    </span>
+    </p>
+  </div>
+</footer>
+{{outlet}}
