@@ -1,0 +1,101 @@
+$spinStyle: linear infinite;
+$outer: 10rem;
+$inner: calc(#{$outer} - 2rem);
+$inner2: calc(#{$inner} - 2rem);
+$inner3: calc(#{$inner2} - 4rem);
+$outerRate: 2s $spinStyle;
+$innerRate: 1s $spinStyle;
+$inner2Rate: 1.2s $spinStyle;
+$inner3Rate: 0.8s $spinStyle;
+$visibleBorder: solid $button-green;
+$invisibleBorder: solid $master-bg;
+
+@keyframes spin {
+  from {
+     -ms-transform: rotate3d(0, 0, 1, 360deg);
+     -moz-transform: rotate3d(0, 0, 1, 360deg);
+     -webkit-transform: rotate3d(0, 0, 1, 360deg);
+     -o-transform: rotate3d(0, 0, 1, 360deg);
+     transform: rotate3d(0, 0, 1, 360deg);
+   }
+   to {
+     -ms-transform: rotate3d(0, 0, 1, 0deg);
+     -moz-transform: rotate3d(0, 0, 1, 0deg);
+     -webkit-transform: rotate3d(0, 0, 1, 0deg);
+     -o-transform: rotate3d(0, 0, 1, 0deg);
+     transform: rotate3d(0, 0, 1, 0deg);
+   }
+}
+
+.loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+
+  &-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px $visibleBorder;
+    border-left: 1px $invisibleBorder;
+    width: $outer;
+    height: $outer;
+    border-radius: $outer;
+    -ms-animation: spin $outerRate;
+    -moz-animation: spin $outerRate;
+    -webkit-animation: spin $outerRate;
+    -o-animation: spin $outerRate;
+    animation: spin $outerRate;
+  }
+
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px $invisibleBorder;
+    border-top: 3px $visibleBorder;
+    border-left: 3px $visibleBorder;
+    width: $inner;
+    height: $inner;
+    border-radius: $inner;
+    -ms-animation: spin $innerRate;
+    -moz-animation: spin $innerRate;
+    -webkit-animation: spin $innerRate;
+    -o-animation: spin $innerRate;
+    animation: spin $innerRate;
+    animation-direction: reverse;
+  }
+
+  &-inner2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px $invisibleBorder;
+    border-right: 2px $visibleBorder;
+    width: $inner2;
+    height: $inner2;
+    border-radius: $inner2;
+    -ms-animation: spin $inner2Rate;
+    -moz-animation: spin $inner2Rate;
+    -webkit-animation: spin $inner2Rate;
+    -o-animation: spin $inner2Rate;
+    animation: spin $inner2Rate;
+  }
+
+  &-inner3 {
+    border: 1px $visibleBorder;
+    border-top: 1px $invisibleBorder;
+    width: $inner3;
+    height: $inner3;
+    border-radius: $inner3;
+    -ms-animation: spin $inner3Rate;
+    -moz-animation: spin $inner3Rate;
+    -webkit-animation: spin $inner3Rate;
+    -o-animation: spin $inner3Rate;
+    animation: spin $inner3Rate;
+    animation-direction: reverse;
+  }
+}
